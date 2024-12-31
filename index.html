@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>新年倒计时</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: #000;
+        }
+        #countdown-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 100;
+        }
+        #year-text {
+            color: #fff;
+            font-size: 36px;
+            font-family: Arial, sans-serif;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(255,255,255,0.7);
+        }
+        #countdown {
+            color: #fff;
+            font-size: 60px;
+            font-family: Arial, sans-serif;
+            text-shadow: 0 0 20px rgba(255,255,255,0.7);
+        }
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="countdown-container">
+        <div id="year-text">距离2025年</div>
+        <div id="countdown"></div>
+    </div>
+    <canvas id="fireworks"></canvas>
+    <script src="fireworks.js"></script>
+</body>
+</html> 
